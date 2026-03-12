@@ -1,47 +1,54 @@
-# IA-Acessibilidade
-Protocolo de engenharia de prompt para a adaptação de materiais didáticos de Computação para estudantes com deficiência visual. Baseado nas normas ISO 9241-171 e NBR ISO 24495-1. Submissão WEI 2026
-
 # Design Instrucional Acessível com IAGen em Computação
 
-Este repositório contém o protocolo de engenharia de prompt e os registos (*logs*) de interação utilizados na investigação intitulada **"IA Generativa no Suporte ao Design de Atividades de Computação Acessíveis"**, submetida ao **WEI 2026 (Workshop sobre Educação em Computação - SBC)**.
+Este repositório hospeda o protocolo de engenharia de prompt e os registros (*logs*) de interação da pesquisa intitulada **"IA Generativa no Suporte ao Design de Atividades de Computação Acessíveis"**, submetida ao **XXXIV Workshop sobre Educação em Computação (WEI 2026 - SBC)**.
 
-O objetivo deste projeto é fornecer uma metodologia sistematizada para que docentes possam utilizar modelos de linguagem (LLMs) na adaptação de materiais didáticos para estudantes com deficiência visual, garantindo rigor técnico e acessibilidade normativa.
+O projeto estabelece um procedimento sistematizado para auxiliar docentes na adaptação de materiais didáticos de computação para estudantes com deficiência visual. O foco central é a remoção de barreiras de percepção física através da transposição semântica, assegurando o rigor técnico e a autonomia pedagógica.
 
 ## 🚀 Reprodutibilidade e Ciência Aberta
 
-Para garantir que esta investigação seja aplicável em diversos contextos educativos, todos os testes foram realizados utilizando a **versão gratuita do ChatGPT**. Esta escolha metodológica visa democratizar o acesso às técnicas de adaptação, permitindo que professores sem acesso a licenças pagas possam replicar os resultados.
+Alinhado aos princípios de justiça digital, este estudo utiliza exclusivamente a **versão gratuita do ChatGPT**. Esta decisão metodológica garante que as estratégias de adaptação sejam replicáveis por docentes em diversos contextos institucionais, independentemente de acesso a licenças pagas, promovendo a democratização de ferramentas de inclusão.
 
-## 🧠 Procedimento de Prompting Estruturado
 
-A interação com o modelo seguiu um protocolo rigoroso fundamentado na convergência de três marcos da literatura de engenharia de prompt:
 
-1.  **Atribuição de Persona (Reynolds & McDonell, 2021):** O modelo é instruído a operar como um especialista híbrido em Engenharia de Software, Design de Interação (IHC) e Educação Inclusiva.
-2.  **Padrão de Restrições (White et al., 2023):** Injeção direta das normas **ISO 9241-171** e **ABNT NBR ISO 24495-1** como regras de design, proibindo referências espaciais e garantindo a preservação da agência do estudante.
-3.  **Raciocínio em Cadeia (Wei et al., 2022):** Utilização de *Chain-of-Thought* (CoT) para obrigar o modelo a descrever a lógica da transposição semântica antes de gerar o recurso final.
+## 🧠 Protocolo de Prompting Estruturado
+
+A interação com o modelo de linguagem não ocorre de forma trivial; ela segue um protocolo fundamentado em três pilares da literatura científica para garantir resultados consistentes e tecnicamente válidos:
+
+1. **Programação por Personas (Reynolds & McDonell, 2021):** O modelo é configurado para simular um especialista híbrido em Engenharia de Software, IHC e Educação Inclusiva. Isso delimita o vocabulário técnico e a sensibilidade pedagógica da IA.
+2. **Padrão de Restrições (White et al., 2023):** Injeção das normas **ISO 9241-171** e **ABNT NBR ISO 24495-1** como regras de design. O protocolo proíbe referências espaciais e exige equivalência semântica, impedindo que a acessibilidade seja meramente superficial.
+3. **Estímulo ao Raciocínio (Wei et al., 2022):** Aplicação de *Chain-of-Thought* (Cadeia de Pensamento), onde a IA deve descrever sua lógica de adaptação e conformidade normativa antes de gerar o artefato final.
+
+
+
+## 📋 Conformidade Normativa
+
+Diferente de adaptações genéricas, este protocolo operacionaliza cláusulas específicas de normas internacionais e nacionais:
+
+* **ISO 9241-171 (Acessibilidade de Software):** Foco em Independência Sensorial e Navegação Hierárquica. A saída é estruturada para ser eficiente no escaneamento por leitores de tela (NVDA/JAWS), transformando elementos visuais em relações lógicas.
+* **ABNT NBR ISO 24495-1 (Linguagem Simples):** Foco na redução da sobrecarga cognitiva auditiva. As respostas são otimizadas para serem concisas, diretas e fáceis de localizar auditivamente.
 
 ## 📂 Estrutura do Repositório
 
-* `/prompts`: Contém o template mestre utilizado para a geração das atividades.
-* `/logs`: Transcrições completas das interações (Prompts e Respostas), permitindo auditar o raciocínio da IA.
-* `/outputs`: Artefatos gerados, incluindo códigos PlantUML, tabelas linearizadas e roteiros de computação tangível.
+* `/prompts`: Arquivos com o procedimento de configuração (Pre-prompt) e o template de execução.
+* `/logs`: Transcrições brutas das sessões, permitindo a auditoria das cadeias de raciocínio da IA.
+* `/outputs`: Resultados da transposição (ex: códigos PlantUML, tabelas linearizadas e roteiros tangíveis).
 
 ## 🛠️ Como Replicar
 
-1.  Aceda ao [ChatGPT](https://chat.openai.com/) (Versão gratuita).
-2.  Copie o template de prompt localizado em `/prompts/Template_Mestre.md`.
-3.  Preencha os campos `[CENÁRIO]` e `[BARREIRA]` com os dados da sua atividade.
-4.  Analise a "Cadeia de Raciocínio" gerada pela IA antes de validar o recurso didático final.
+1.  Consulte o arquivo `/prompts/Protocolo_Estruturado.md`.
+2.  Inicie uma sessão na versão gratuita do ChatGPT e envie o **Comando de Configuração**.
+3.  Após a confirmação da persona, utilize o **Template de Execução** inserindo os dados do seu cenário específico (ex: um diagrama ou fragmento de código).
+4.  Valide se a "Cadeia de Pensamento" da IA respeitou as restrições de agência (não resolver o exercício para o aluno).
 
 ## 📄 Licença
 
-Este repositório está licenciado sob a licença **Creative Commons Attribution 4.0 International (CC-BY 4.0)**. Pode partilhar e adaptar os conteúdos, desde que atribua o devido crédito à investigação original.
+Este repositório está sob a licença **Creative Commons Attribution 4.0 International (CC-BY 4.0)**. O uso, compartilhamento e adaptação são livres, desde que atribuído o crédito à investigação original.
 
 ## ✍️ Citação
 
-Caso este protocolo seja útil para o seu trabalho, utilize a seguinte citação:
-
 ```bibtex
-#em breve
+#EM BREVE
 ```
+
 ---
-*Investigação focada na promoção da justiça digital e na autonomia de estudantes cegos no ensino de computação.*
+*Investigação focada na promoção da autonomia e justiça digital para estudantes cegos no ensino de computação.*
