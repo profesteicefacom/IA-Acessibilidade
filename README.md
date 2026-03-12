@@ -1,6 +1,6 @@
 # Design Instrucional Acessível com IAGen em Computação
 
-Este repositório hospeda o protocolo de engenharia de prompt e os registros (*logs*) de interação da pesquisa intitulada **"IA Generativa no Suporte ao Design de Atividades de Computação Acessíveis"**, submetida ao **XXXIV Workshop sobre Educação em Computação (WEI 2026 - SBC)**.
+Este repositório hospeda o protocolo de engenharia de prompt e os registros (*logs*) de interação da pesquisa intitulada **"IA Generativa no Suporte ao Design de Atividades de Computação Acessíveis"**.
 
 O projeto estabelece um procedimento sistematizado para auxiliar docentes na adaptação de materiais didáticos de computação para estudantes com deficiência visual. O foco central é a remoção de barreiras de percepção física através da transposição semântica, assegurando o rigor técnico e a autonomia pedagógica.
 
