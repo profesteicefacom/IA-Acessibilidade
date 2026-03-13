@@ -2,53 +2,41 @@
 
 Este repositório hospeda o protocolo de engenharia de prompt e os registros (*logs*) de interação da pesquisa intitulada **"IA Generativa no Suporte ao Design de Atividades de Computação Acessíveis"**.
 
-O projeto estabelece um procedimento sistematizado para auxiliar docentes na adaptação de materiais didáticos de computação para estudantes com deficiência visual. O foco central é a remoção de barreiras de percepção física através da transposição semântica, assegurando o rigor técnico e a autonomia pedagógica.
+O projeto estabelece um procedimento sistematizado para auxiliar docentes na identificação de barreiras de acessibilidade e na proposição de estratégias pedagógicas para estudantes com deficiência visual. O objetivo central é transformar a IA em uma assistente de design instrucional, garantindo que a tecnologia atue na remoção de barreiras de percepção sem comprometer o desafio cognitivo ou a agência do estudante no ensino de tecnologia.
 
 ## 🚀 Reprodutibilidade e Ciência Aberta
 
-Alinhado aos princípios de justiça digital, este estudo utiliza exclusivamente a **versão gratuita do ChatGPT**. Esta decisão metodológica garante que as estratégias de adaptação sejam replicáveis por docentes em diversos contextos institucionais, independentemente de acesso a licenças pagas, promovendo a democratização de ferramentas de inclusão.
-
-
+Alinhado aos princípios de justiça digital e acessibilidade econômica, este estudo utiliza exclusivamente a **versão gratuita do ChatGPT**. Esta decisão garante que o protocolo seja replicável por docentes em diversos contextos institucionais, independentemente do acesso a licenças pagas, promovendo a democratização de ferramentas de inclusão síncrona.
 
 ## 🧠 Protocolo de Prompting Estruturado
 
-A interação com o modelo de linguagem não ocorre de forma trivial; ela segue um protocolo fundamentado em três pilares da literatura científica para garantir resultados consistentes e tecnicamente válidos:
+A interação com o modelo de linguagem segue um rigoroso desenho experimental fundamentado em três marcos da literatura de engenharia de prompt, visando resultados tecnicamente válidos e pedagogicamente úteis:
 
-1. **Programação por Personas (Reynolds & McDonell, 2021):** O modelo é configurado para simular um especialista híbrido em Engenharia de Software, IHC e Educação Inclusiva. Isso delimita o vocabulário técnico e a sensibilidade pedagógica da IA.
-2. **Padrão de Restrições (White et al., 2023):** Injeção das normas **ISO 9241-171** e **ABNT NBR ISO 24495-1** como regras de design. O protocolo proíbe referências espaciais e exige equivalência semântica, impedindo que a acessibilidade seja meramente superficial.
-3. **Estímulo ao Raciocínio (Wei et al., 2022):** Aplicação de *Chain-of-Thought* (Cadeia de Pensamento), onde a IA deve descrever sua lógica de adaptação e conformidade normativa antes de gerar o artefato final.
-
-
+1. **Padrão de Persona (Reynolds & McDonell, 2021; White et al., 2023):** O modelo é ancorado no papel de um especialista em acessibilidade no ensino de computação. Isso localiza a tarefa no domínio do design pedagógico inclusivo, orientando a geração de recomendações tecnicamente precisas.
+2. **Padrão de Restrições (White et al., 2023):** Injeção de marcos normativos como regras de design rígidas. O protocolo utiliza diretrizes de acessibilidade e linguagem simples para mitigar dependências sensoriais e ambiguidades linguísticas.
+3. **Raciocínio em Cadeia (Wei et al., 2022):** Aplicação de *Chain-of-Thought* (Cadeia de Pensamento) para a decomposição de problemas complexos. Exige-se que o modelo realize uma análise intermediária das barreiras e seus impactos antes de propor a adaptação final.
 
 ## 📋 Conformidade Normativa
 
-Diferente de adaptações genéricas, este protocolo operacionaliza cláusulas específicas de normas internacionais e nacionais:
+Diferente de abordagens genéricas, este protocolo operacionaliza cláusulas técnicas de marcos nacionais e internacionais:
 
-* **ISO 9241-171 (Acessibilidade de Software):** Foco em Independência Sensorial e Navegação Hierárquica. A saída é estruturada para ser eficiente no escaneamento por leitores de tela (NVDA/JAWS), transformando elementos visuais em relações lógicas.
-* **ABNT NBR ISO 24495-1 (Linguagem Simples):** Foco na redução da sobrecarga cognitiva auditiva. As respostas são otimizadas para serem concisas, diretas e fáceis de localizar auditivamente.
+* **ISO/IEC 25010 & ISO 9241-171:** Foco na qualidade, equivalência semântica e independência sensorial na interação com tecnologias assistivas.
+* **ABNT NBR ISO 24495-1 (Linguagem Simples):** Redução da sobrecarga cognitiva auditiva através de clareza informativa e concisão textual.
+* **WCAG & ABNT NBR 17225:** Alinhamento com os princípios universais de perceptibilidade e operabilidade digital.
 
 ## 📂 Estrutura do Repositório
 
-* `/prompts`: Arquivos com o procedimento de configuração (Pre-prompt) e o template de execução.
-* `/logs`: Transcrições brutas das sessões, permitindo a auditoria das cadeias de raciocínio da IA.
-* `/outputs`: Resultados da transposição (ex: códigos PlantUML, tabelas linearizadas e roteiros tangíveis).
+* `/prompts`: Contém o **Template Mestre** estruturado para apoio ao design instrucional.
+* `/logs`: Transcrições brutas das sessões, evidenciando as etapas de análise de barreiras e recomendações.
+* `/outputs`: Estratégias de adaptação geradas (ex: roteiros de computação tangível, códigos PlantUML e estruturas lineares).
 
 ## 🛠️ Como Replicar
 
-1.  Consulte o arquivo `/prompts/Protocolo_Estruturado.md`.
-2.  Inicie uma sessão na versão gratuita do ChatGPT e envie o **Comando de Configuração**.
-3.  Após a confirmação da persona, utilize o **Template de Execução** inserindo os dados do seu cenário específico (ex: um diagrama ou fragmento de código).
-4.  Valide se a "Cadeia de Pensamento" da IA respeitou as restrições de agência (não resolver o exercício para o aluno).
+1.  Acesse o arquivo `/prompts/Template_Mestre.md`.
+2.  Inicie uma sessão na versão gratuita do ChatGPT e envie o comando seguindo a estrutura de **Papel da IA** e **Referencial Normativo**.
+3.  Insira os dados da sua atividade (Tipo de recurso, Dinâmica e Objetivo Pedagógico).
+4.  Analise a **Cadeia de Raciocínio** gerada pela IA para validar se as recomendações preservam a agência do estudante e a integridade do conteúdo técnico antes de aplicar a atividade.
 
 ## 📄 Licença
 
 Este repositório está sob a licença **Creative Commons Attribution 4.0 International (CC-BY 4.0)**. O uso, compartilhamento e adaptação são livres, desde que atribuído o crédito à investigação original.
-
-## ✍️ Citação
-
-```bibtex
-#EM BREVE
-```
-
----
-*Investigação focada na promoção da autonomia e justiça digital para estudantes cegos no ensino de computação.*
