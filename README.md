@@ -26,13 +26,11 @@ Diferente de abordagens genéricas, este protocolo operacionaliza cláusulas té
 
 ## 📂 Estrutura do Repositório
 
-* `/prompts`: Contém o **Template Mestre** estruturado para apoio ao design instrucional.
-* `/logs`: Transcrições brutas das sessões, evidenciando as etapas de análise de barreiras e recomendações.
-* `/outputs`: Estratégias de adaptação geradas (ex: roteiros de computação tangível, códigos PlantUML e estruturas lineares).
+
 
 ## 🛠️ Como Replicar
 
-1.  Acesse o arquivo `/prompts/Template_Mestre.md`.
+1.  Acesse o arquivo `Template_Prompt.md`.
 2.  Inicie uma sessão na versão gratuita do ChatGPT e envie o comando seguindo a estrutura de **Papel da IA** e **Referencial Normativo**.
 3.  Insira os dados da sua atividade (Tipo de recurso, Dinâmica e Objetivo Pedagógico).
 4.  Analise a **Cadeia de Raciocínio** gerada pela IA para validar se as recomendações preservam a agência do estudante e a integridade do conteúdo técnico antes de aplicar a atividade.
